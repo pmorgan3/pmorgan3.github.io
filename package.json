@@ -2,11 +2,12 @@
   "name": "pmorgan3.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "git@github.com:pmorgan3/pmorgan3.github.io",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build;"
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
     "vue": "^2.5.16"
@@ -16,6 +17,7 @@
     "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
     "@vue/cli-service": "^3.0.0-beta.15",
     "push-dir": "^0.4.1",
+    "vue-gh-pages": "^1.16.3",
     "vue-template-compiler": "^2.5.16"
   },
   "eslintConfig": {
