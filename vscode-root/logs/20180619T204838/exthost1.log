@@ -1,0 +1,54 @@
+[2018-06-19 20:48:41.424] [exthost1] [info] extension host started
+[2018-06-19 20:48:41.455] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:41.455] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/out/extension
+[2018-06-19 20:48:41.519] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:41.519] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/out/main
+[2018-06-19 20:48:41.682] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:41.682] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/out/extension
+[2018-06-19 20:48:41.693] [exthost1] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:41.693] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/search-rg/out/extension
+[2018-06-19 20:48:41.698] [exthost1] [info] ExtensionService#_doActivateExtension Equinusocio.vsc-material-theme {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:41.698] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/Equinusocio.vsc-material-theme-2.1.0/extensions/material.theme.config.js
+[2018-06-19 20:48:41.709] [exthost1] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:41.709] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/PKief.material-icon-theme-3.5.0/out/src/extension
+[2018-06-19 20:48:41.748] [exthost1] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:41.748] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/Zignd.html-css-class-completion-1.17.1/out/src/extension
+[2018-06-19 20:48:42.114] [exthost1] [info] ExtensionService#_doActivateExtension alefragnani.Bookmarks {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:42.114] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/alefragnani.bookmarks-0.19.1/out/src/extension
+[2018-06-19 20:48:42.125] [exthost1] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:42.125] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/coenraads.bracket-pair-colorizer-1.0.58/out/src/extension
+[2018-06-19 20:48:42.140] [exthost1] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:42.140] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/dbaeumer.vscode-eslint-1.4.12/client/out/extension
+[2018-06-19 20:48:42.196] [exthost1] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:42.196] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/eamodio.gitlens-8.4.1/out/extension
+[2018-06-19 20:48:42.378] [exthost1] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:42.378] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/esbenp.prettier-vscode-1.5.0/out/src/extension
+[2018-06-19 20:48:42.570] [exthost1] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:42.570] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/formulahendry.auto-close-tag-0.5.6/out/src/extension
+[2018-06-19 20:48:42.574] [exthost1] [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:42.574] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15/out/src/extension
+[2018-06-19 20:48:42.576] [exthost1] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:42.576] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/hookyqr.beautify-1.3.2/extension
+[2018-06-19 20:48:42.620] [exthost1] [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:42.620] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/ms-vsliveshare.vsliveshare-0.3.317/out/src/extension
+[2018-06-19 20:48:43.064] [exthost1] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:43.064] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/ritwickdey.liveserver-5.0.0/out/src/extension
+[2018-06-19 20:48:43.254] [exthost1] [info] ExtensionService#_doActivateExtension robertohuertasm.vscode-icons {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:43.254] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/robertohuertasm.vscode-icons-7.23.0/out/src/
+[2018-06-19 20:48:43.329] [exthost1] [info] ExtensionService#_doActivateExtension tombonnike.vscode-status-bar-format-toggle {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:43.329] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/tombonnike.vscode-status-bar-format-toggle-1.4.0/out/src/extension
+[2018-06-19 20:48:43.370] [exthost1] [info] ExtensionService#_doActivateExtension vortizhe.simple-ruby-erb {"startup":true,"activationEvent":"*"}
+[2018-06-19 20:48:43.370] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/vortizhe.simple-ruby-erb-0.2.1/ruby_erb.js
+[2018-06-19 20:48:43.371] [exthost1] [info] eager extensions activated
+[2018-06-19 20:48:43.371] [exthost1] [info] ExtensionService#_doActivateExtension aaron-bond.better-comments {"startup":false,"activationEvent":"onLanguage:plaintext"}
+[2018-06-19 20:48:43.371] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/aaron-bond.better-comments-1.2.6/out/extension
+[2018-06-19 20:48:43.942] [exthost1] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"activationEvent":"onLanguage:html"}
+[2018-06-19 20:48:43.942] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/html-language-features/client/out/htmlMain
+[2018-06-19 20:48:44.064] [exthost1] [info] ExtensionService#_doActivateExtension AESSoft.aessoft-class-autocomplete {"startup":false,"activationEvent":"onLanguage:html"}
+[2018-06-19 20:48:44.064] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/AESSoft.aessoft-class-autocomplete-0.1.0/extension
+[2018-06-19 20:48:44.082] [exthost1] [info] ExtensionService#_doActivateExtension dbaeumer.jshint {"startup":false,"activationEvent":"onLanguage:html"}
+[2018-06-19 20:48:44.082] [exthost1] [info] ExtensionService#loadCommonJSModule /home/honest/.vscode/extensions/dbaeumer.jshint-0.10.19/jshint/out/extension
+[2018-06-19 20:48:44.184] [exthost1] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-06-19 20:48:44.184] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/configuration-editing/out/extension
+[2018-06-19 20:48:44.194] [exthost1] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-06-19 20:48:44.194] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/json-language-features/client/out/jsonMain
