@@ -16,7 +16,7 @@
     <transition name="alert-in">
         <div class="alert" v-if="legalDocketActive && isActive">
             
-            <p>Currently leading a team consisting of 2 other people and myself in the ongoing development of a website to assist legal aid clinics in storing . This website allows the members of The Justice Center to store and access client information with ease. The website is made using Ruby on Rails and Postgresql for the backend and Bootstrap for the front end. It is hosted using DigitalOcean.</p>
+            <p>Currently leading a team consisting of 2 other people and myself in the ongoing development of a website to assist legal aid clinics in storing client data. This website allows the members of The Justice Center to store and access client information with ease. The website is made using Ruby on Rails and Postgresql for the backend and Bootstrap for the front end. It is hosted using DigitalOcean.</p>
             <br/>
             <p><a href="http://www.legaldocket.org" target="_blank"> legaldocket.org </a></p>
         </div>
