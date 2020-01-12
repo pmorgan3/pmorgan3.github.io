@@ -18,13 +18,10 @@ function App(this: any) {
     <>
       <div className="App">
         <SimpleHeader />
-       
-              <Project title={keyvTitle} body={keyvBody} status={'Status: available on NPM'}/>
-              <Project title={legalDocketTitle} body={legalDocketBody} status={'Status: Taken offline'}/>
-              <Project title={uicSchoolPageTitle} body={uicSchoolPageBody} status={'Status: Taken offline'} />
-              <Project title={androidNoteTitle} body={androidNoteBody} status={'Status: Code available on github'}/>
-          
-
+          <Project title={keyvTitle} body={keyvBody} status={'Status: available on NPM'}/>
+          <Project title={legalDocketTitle} body={legalDocketBody} status={'Status: Taken offline'}/>
+          <Project title={uicSchoolPageTitle} body={uicSchoolPageBody} status={'Status: Taken offline'} />
+          <Project title={androidNoteTitle} body={androidNoteBody} status={'Status: Code available on github'}/>
       </div>
     </>
   );
