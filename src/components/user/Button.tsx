@@ -14,6 +14,7 @@ export const Button: React.FunctionComponent<{size: SizeType, variant?: VariantT
       size={size}
       variant={variant}
       color={color}
+      className={"button-gradient"}
     >
           {text}{children}
     </MaterialButton>

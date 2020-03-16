@@ -17,7 +17,7 @@ export const CardTop = ( children ) => {
 CardTop.craft = {
   rules: {
     // Only accept Text
-    canMoveIn: (incomingNode: any) => incomingNode.data.type == Text
+    canMoveIn: (incomingNode: any) => incomingNode.data.type === Text
   }
 };
 export const CardBottom = ( children: any ) => {
@@ -29,7 +29,7 @@ export const CardBottom = ( children: any ) => {
 CardBottom.craft = {
   rules: {
     // Only accept Buttons
-    canMoveIn: (incomingNode: any) => incomingNode.data.type == Button
+    canMoveIn: (incomingNode: any) => incomingNode.data.type === Button
   }
 };
 export const Card: React.FunctionComponent<{background?: any, padding?: number}> = ({ background, padding = 20 }) => {
