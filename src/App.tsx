@@ -33,14 +33,14 @@ import {
 } from './text';
 import React from 'react';
 import {Typography, Paper, Grid} from '@material-ui/core';
-import { Toolbox } from './src/components/Toolbox';
-import { SettingsPanel } from './src/components/Settings';
-import { Container } from './src/components/user/Container';
-import { Button } from './src/components/user/Button';
-import { Card, CardTop, CardBottom } from './src/components/user/Card';
-import { Text } from './src/components/user/Text';
+import { Toolbox } from './components/Toolbox';
+import { SettingsPanel } from './components/Settings';
+import { Container } from './components/user/Container';
+import { Button } from './components/user/Button';
+import { Card, CardTop, CardBottom } from './components/user/Card';
+import { Text } from './components/user/Text';
 import {Editor, Frame, Canvas} from "@craftjs/core";
-import { Topbar } from './src/components/Topbar';
+import { Topbar } from './components/Topbar';
 
 export default function App() {
   return (
