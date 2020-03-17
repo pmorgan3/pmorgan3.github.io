@@ -44,7 +44,7 @@ export default function App() {
   return (
     <div>
       <Typography variant="h5" align="center">
-        A super simple page editor
+        Paul Morgan III: Web Developer
       </Typography>
       <Editor resolver={{ Card, Button, Text, CardTop, CardBottom }}>
         <Grid container spacing={3}>
@@ -52,8 +52,8 @@ export default function App() {
             <Frame>
               <Canvas is={Container} padding={5} background="#eee">
                 <Card />
-                <Button size="small" variant="outlined">
-                  Click
+                <Button size="small" variant="outlined" text="CLick">
+                  
                 </Button>
                 <Text fontSize="small" text="Hi world!" />
                 <Canvas is={Container} padding={6} background="#999">

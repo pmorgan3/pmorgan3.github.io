@@ -2,7 +2,7 @@
 import React from "react";
 import { Text } from "./Text";
 import { Button } from "./Button";
-import { Container } from "./Container";
+import { Container, ContainerSettings, ContainerDefaultProps } from "./Container";
 import { useNode, Canvas } from "@craftjs/core";
 export const CardTop = ( children ) => {
   const {
@@ -32,7 +32,7 @@ CardBottom.craft = {
     canMoveIn: (incomingNode: any) => incomingNode.data.type === Button
   }
 };
-export const Card: React.FunctionComponent<{background?: any, padding?: number}> = ({ background, padding = 20 }) => {
+export const Card: any = ({ background, padding = 20 }) => {
   return (
     <Container background={background} padding={padding}>
       <Canvas id="text">
@@ -47,3 +47,9 @@ export const Card: React.FunctionComponent<{background?: any, padding?: number}>
     </Container>
   );
 };
+Card.craft = {
+  defaultProps: ContainerDefaultProps,
+  related: {
+    settings: ContainerSettings // Same settings as the container lol
+  }
+}
