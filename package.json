@@ -1,47 +1,54 @@
 {
-  "name": "pmorgan3.github.io",
+  "name": "pmorgan3",
   "version": "0.1.0",
+  "homepage": "http://pmorgan3.github.io/",
   "private": true,
-  "homepage": "git@github.com:pmorgan3/pmorgan3.github.io",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "deploy": "npm run build; push-dir --dir=dist --branch=master --cleanup"
-  },
   "dependencies": {
-    "vue": "^2.5.16"
+    "@craftjs/core": "^0.1.0-beta.1",
+    "@material-ui/core": "^4.8.3",
+    "@types/jest": "^24.0.25",
+    "@types/material-ui": "^0.21.7",
+    "@types/node": "^13.1.1",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "autoresponsive-react": "^1.1.31",
+    "grommet": "^2.8.1",
+    "material-ui": "^0.20.2",
+    "material-ui-color-picker": "^3.2.0",
+    "react": "^16.12.0",
+    "react-contenteditable": "^3.3.3",
+    "react-dnd": "^10.0.2",
+    "react-dnd-html5-backend": "^10.0.2",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
+    "styled-components": "^4.4.1",
+    "typescript": "^3.7.4"
   },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
-    "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
-    "@vue/cli-service": "^3.0.0-beta.15",
-    "push-dir": "^0.4.1",
-    "vue-gh-pages": "^1.16.3",
-    "vue-template-compiler": "^2.5.16"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
