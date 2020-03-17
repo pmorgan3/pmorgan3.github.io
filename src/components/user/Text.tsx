@@ -12,9 +12,9 @@ export const Text: any = ( {text, fontSize} ) => {
   const [editable, setEditable] = useState(false);
   useEffect(() => {!selected && setEditable(false)}, [selected]);
     return (
-      <div ref={ref => connect(drag(ref))}>
+      <div ref={ref => connect(drag(ref))} onClick={e => setEditable(true)}>
         <ContentEditable
-          disabled={!!editable}
+          disabled={!editable}
           html={text}
           onChange={e => 
             setProp(props => 
