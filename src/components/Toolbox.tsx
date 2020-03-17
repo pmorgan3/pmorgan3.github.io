@@ -11,6 +11,7 @@ import { Button } from "./user/Button";
 import { Text } from "./user/Text"
 import { Container } from './user/Container';
 import { Card } from './user/Card';
+import { BottomBar } from "./user/BottomNavigation";
 
 export const Toolbox = () => {
      const { connectors, query } = useEditor();
@@ -62,6 +63,13 @@ export const Toolbox = () => {
             Card
           </MaterialButton>
         </Grid>
+        {/* <Grid container direction="column" item>
+          <MaterialButton 
+            ref={ref => connectors.create(ref, <BottomBar />)} varient="contained"
+           >
+            Bottom Nav
+          </MaterialButton>
+        </Grid> */}
       </Grid>
     </Box>
   );

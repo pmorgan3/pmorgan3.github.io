@@ -40,9 +40,7 @@ export const Card: any = ({ background, padding = 20 }) => {
         <Text text="Subtitle" fontSize={15} />
       </Canvas>
       <Canvas id="buttons">
-              <Button size="small" >
-                Learn more
-              </Button>
+              <Button size="small" text="Learn More"/>
       </Canvas>
     </Container>
   );

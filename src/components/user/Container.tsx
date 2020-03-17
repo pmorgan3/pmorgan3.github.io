@@ -9,7 +9,7 @@ export const Container: any = ({ background, padding = 0, children, width, margi
   return (
       <Paper
           ref={(ref) => wrapper(ref)}
-          style={{ background: `${background}`, padding: `${padding}px`, width: `${width}%`, margin: `${margin}%` }
+          style={{ background: `${background}`, padding: `${padding}px`, width: `${width}%`, margin: `${margin}%`,  }
           }
       >
       {children}
@@ -21,7 +21,8 @@ export const ContainerSettings = () => {
     background: node.data.props.background,
     padding: node.data.props.padding,
     width: node.data.props.width,
-    margin: node.data.props.margin
+    margin: node.data.props.margin,
+   
   }));
   return (
     <div>
@@ -38,6 +39,7 @@ export const ContainerSettings = () => {
         <Slider defaultValue={width} onChange={(_, value) => setProp(props => props.width = value)} />
         <FormLabel component="legend">Margin</FormLabel>
         <Slider defaultValue={margin} onChange={(_, value) => setProp(props => props.margin = value)} />
+        
       </FormControl>
     </div>
   )
