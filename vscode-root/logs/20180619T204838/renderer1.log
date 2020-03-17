@@ -1,9 +1,0 @@
-[2018-06-19 20:48:40.994] [renderer1] [info] no standard startup: not the explorer viewlet
-[2018-06-19 20:48:50.653] [renderer1] [error] Failed to load jshint library. Please install jshint in your workspace folder using 'npm install jshint' or globally using 'npm install -g jshint' and then press Retry.: Error: Failed to load jshint library. Please install jshint in your workspace folder using 'npm install jshint' or globally using 'npm install -g jshint' and then press Retry.
-    at new ResponseError (/home/honest/.vscode/extensions/dbaeumer.jshint-0.10.19/jshint/node_modules/vscode-jsonrpc/lib/messages.js:46:28)
-    at handleResponse (/home/honest/.vscode/extensions/dbaeumer.jshint-0.10.19/jshint/node_modules/vscode-jsonrpc/lib/main.js:430:48)
-    at processMessageQueue (/home/honest/.vscode/extensions/dbaeumer.jshint-0.10.19/jshint/node_modules/vscode-jsonrpc/lib/main.js:258:17)
-    at Immediate.<anonymous> (/home/honest/.vscode/extensions/dbaeumer.jshint-0.10.19/jshint/node_modules/vscode-jsonrpc/lib/main.js:242:13)
-    at runCallback (timers.js:672:20)
-    at tryOnImmediate (timers.js:645:5)
-    at processImmediate [as _immediateCallback] (timers.js:617:5)
