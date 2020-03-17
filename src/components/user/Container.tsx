@@ -9,7 +9,7 @@ export const Container: any = ({ background, padding = 0, children, width, margi
   return (
       <Paper
           ref={(ref) => wrapper(ref)}
-          style={{ background, padding: `${padding}px`, width: `${width}%`, margin: `${margin}%` }
+          style={{ background: `${background}`, padding: `${padding}px`, width: `${width}%`, margin: `${margin}%` }
           }
       >
       {children}
