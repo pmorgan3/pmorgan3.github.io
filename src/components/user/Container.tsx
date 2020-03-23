@@ -26,7 +26,7 @@ export const ContainerSettings = () => {
   }));
   return (
     <div>
-      <FormControl fullWidth={true} margin="normal" component="fieldset">
+      <FormControl fullWidth={true} margin="normal" component="fieldset" style={{zIndex: 100}} >
         <FormLabel component="legend">Background</FormLabel>
         <ColorPicker defaultValue={background || '#000'} onChange={color => {
           setProp(props => props.background = color)
@@ -36,7 +36,7 @@ export const ContainerSettings = () => {
         <FormLabel component="legend">Padding</FormLabel>
         <Slider defaultValue={padding} onChange={(_, value) => setProp(props => props.padding = value)} />
         <FormLabel component="legend">Width</FormLabel>
-        <Slider defaultValue={width} onChange={(_, value) => setProp(props => props.width = value)} />
+        <Slider defaultValue={width} onChange={(_, value) => setProp(props => props.width = value)}/>
         <FormLabel component="legend">Margin</FormLabel>
         <Slider defaultValue={margin} onChange={(_, value) => setProp(props => props.margin = value)} />
         

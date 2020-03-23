@@ -13,8 +13,8 @@ import { Container } from './user/Container';
 import { Card } from './user/Card';
 import { BottomBar } from "./user/BottomNavigation";
 
-export const Toolbox = () => {
-     const { connectors, query } = useEditor();
+export const Toolbox = ({isVisible}) => {
+  const { connectors, query } = useEditor();
   return (
     <Box px={2} py={2}>
       <Grid

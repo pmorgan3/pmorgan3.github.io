@@ -1,38 +1,10 @@
-/*import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Project} from './components/projects'
-import {Grid} from 'semantic-ui-react'
-import "semantic-ui-css/semantic.min.css";
-
-
-import SimpleHeader from './components/SimpleHeader';
-
-
-function App(this: any) {
-  
-  
-  /*return (
-    <>
-      <div className="App">
-        <SimpleHeader />
-          <Project title={keyvTitle} body={keyvBody} status={'Status: available on NPM'}/>
-          <Project title={legalDocketTitle} body={legalDocketBody} status={'Status: Taken offline'}/>
-          <Project title={uicSchoolPageTitle} body={uicSchoolPageBody} status={'Status: Taken offline'} />
-          <Project title={androidNoteTitle} body={androidNoteBody} status={'Status: Code available on github'}/>
-      </div>
-    </>
-  );*/
-//} */
-// pages/index.js
-// pages/index.js
 import {
   uicSchoolPageBody, uicSchoolPageTitle,
   legalDocketBody, legalDocketTitle, keyvBody, keyvTitle,
   androidNoteBody, androidNoteTitle
 } from './text';
-import React from 'react';
-import {Typography, Paper, Grid} from '@material-ui/core';
+import React, { useState, useCallback } from 'react';
+import {Typography, Paper, Grid, IconButton as MaterialButton} from '@material-ui/core';
 import { Toolbox } from './components/Toolbox';
 import { SettingsPanel } from './components/Settings';
 import { Container } from './components/user/Container';
@@ -41,13 +13,26 @@ import { Card, CardTop, CardBottom } from './components/user/Card';
 import { Text } from './components/user/Text';
 import {Editor, Frame, Canvas} from "@craftjs/core";
 import { Topbar } from './components/Topbar';
+import { SideDrawer } from './components/Drawer';
 
 export default function App() {
+
+  const [isVisible, setVisible] = useState(false)
+
+  const handleMenuClick = useCallback(() => {
+    setVisible(!isVisible);
+  }, [isVisible])
+
   return (
     <div>
-      <Typography variant="h5" align="center">
-        Paul Morgan III: Web Developer
-      </Typography>
+      <div style={{display: 'inline'}}>
+        <Typography variant="h5" align="center">
+          Paul Morgan III: Web Developer
+          <br></br>
+          Make your own damn website
+        </Typography>
+        <SideDrawer />
+      </div>
       <Editor resolver={{ Card, Button, Text, CardTop, CardBottom }}>
         <Topbar />
         <Grid container spacing={3}>
@@ -80,7 +65,7 @@ export default function App() {
           </Grid>
           <Grid item xs={3}>
             <Paper>
-              <Toolbox />
+              
               <SettingsPanel />
             </Paper>
           </Grid>
