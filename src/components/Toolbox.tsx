@@ -33,7 +33,7 @@ export const Toolbox = ({isVisible}) => {
             ref={ref =>
               connectors.create(ref, <Button text="Click me" size="small" />)
             }
-            variant="contained"
+            variant="outlined"
           >
             Button
           </MaterialButton>
@@ -41,7 +41,7 @@ export const Toolbox = ({isVisible}) => {
         <Grid container direction="column" item>
           <MaterialButton
             ref={ref => connectors.create(ref, <Text text="Hi world" />)}
-            variant="contained"
+            variant="outlined"
           >
             Text
           </MaterialButton>
@@ -51,7 +51,7 @@ export const Toolbox = ({isVisible}) => {
             ref={ref =>
               connectors.create(ref, <Canvas is={Container} padding={20} />)
             }
-            variant="contained"
+            variant="outlined"
           >
             Container
           </MaterialButton>
@@ -59,45 +59,45 @@ export const Toolbox = ({isVisible}) => {
         <Grid container direction="column" item>
           <MaterialButton
             ref={ref => connectors.create(ref, <Card />)}
-            variant="contained"
+            variant="outlined"
           >
             Card
           </MaterialButton>
         </Grid>
         <Grid container direction="column" item>
           <MaterialButton
-            ref={ref => connectors.create(ref, <Header headerType={1} text="Header" />)}>
-              h1
+            ref={ref => connectors.create(ref, <Header headerType={1} text="Header" />)} variant="outlined">
+              &lt;h1&#x2F;&gt;
             </MaterialButton>
         </Grid>
         <Grid container direction="column" item>
           <MaterialButton
-            ref={ref => connectors.create(ref, <Header headerType={2} text="Header" />)}>
-              h2
+            ref={ref => connectors.create(ref, <Header headerType={2} text="Header" />)} variant="outlined">
+              &lt;h2&#x2F;&gt;
             </MaterialButton>
         </Grid>
         <Grid container direction="column" item>
           <MaterialButton
-            ref={ref => connectors.create(ref, <Header headerType={3} text="Header" />)}>
-              h3
+            ref={ref => connectors.create(ref, <Header headerType={3} text="Header" />)} variant="outlined">
+              &lt;h3&#x2F;&gt;
             </MaterialButton>
         </Grid>
         <Grid container direction="column" item>
           <MaterialButton
-            ref={ref => connectors.create(ref, <Header headerType={4} text="Header" />)}>
-              h4
+            ref={ref => connectors.create(ref, <Header headerType={4} text="Header" />)} variant="outlined">
+              &lt;h4&#x2F;&gt;
             </MaterialButton>
         </Grid>
         <Grid container direction="column" item>
           <MaterialButton
-            ref={ref => connectors.create(ref, <Header headerType={5} text="Header" />)}>
-              h5
+            ref={ref => connectors.create(ref, <Header headerType={5} text="Header" />)} variant="outlined">
+             &lt;h5&#x2F;&gt;
             </MaterialButton>
         </Grid>
         <Grid container direction="column" item>
           <MaterialButton
-            ref={ref => connectors.create(ref, <Header headerType={6} text="Header" />)}>
-              h6
+            ref={ref => connectors.create(ref, <Header headerType={6} text="Header" />)} variant="outlined">
+              &lt;h6&#x2F;&gt;
             </MaterialButton>
         </Grid>
         {/* <Grid container direction="column" item>

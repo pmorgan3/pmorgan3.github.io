@@ -62,7 +62,7 @@ const ButtonSettings = () => {
 Button.craft = {
    defaultProps: { 
     size: "small", 
-    variant: "contained",
+    variant: "outlined",
     color: "primary",
   },
   related: { 

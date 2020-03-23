@@ -62,9 +62,10 @@ export default function App() {
               </Canvas>
             </Frame>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={"auto"}>
+            <SideDrawer /> 
             <Paper>
-              <SideDrawer /> 
+              
               <SettingsPanel />
             </Paper>
           </Grid>
