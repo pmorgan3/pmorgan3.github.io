@@ -12,6 +12,7 @@ import { Text } from "./user/Text"
 import { Container } from './user/Container';
 import { Card } from './user/Card';
 import { BottomBar } from "./user/BottomNavigation";
+import { Header } from "./user/Header/Header";
 
 export const Toolbox = ({isVisible}) => {
   const { connectors, query } = useEditor();
@@ -62,6 +63,42 @@ export const Toolbox = ({isVisible}) => {
           >
             Card
           </MaterialButton>
+        </Grid>
+        <Grid container direction="column" item>
+          <MaterialButton
+            ref={ref => connectors.create(ref, <Header headerType={1} text="Header" />)}>
+              h1
+            </MaterialButton>
+        </Grid>
+        <Grid container direction="column" item>
+          <MaterialButton
+            ref={ref => connectors.create(ref, <Header headerType={2} text="Header" />)}>
+              h2
+            </MaterialButton>
+        </Grid>
+        <Grid container direction="column" item>
+          <MaterialButton
+            ref={ref => connectors.create(ref, <Header headerType={3} text="Header" />)}>
+              h3
+            </MaterialButton>
+        </Grid>
+        <Grid container direction="column" item>
+          <MaterialButton
+            ref={ref => connectors.create(ref, <Header headerType={4} text="Header" />)}>
+              h4
+            </MaterialButton>
+        </Grid>
+        <Grid container direction="column" item>
+          <MaterialButton
+            ref={ref => connectors.create(ref, <Header headerType={5} text="Header" />)}>
+              h5
+            </MaterialButton>
+        </Grid>
+        <Grid container direction="column" item>
+          <MaterialButton
+            ref={ref => connectors.create(ref, <Header headerType={6} text="Header" />)}>
+              h6
+            </MaterialButton>
         </Grid>
         {/* <Grid container direction="column" item>
           <MaterialButton 

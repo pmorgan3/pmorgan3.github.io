@@ -15,8 +15,6 @@ export const BottomBar = () => {
             dragged: state.events.dragged
         })
     )
-    
-
     const [value, setValue] = React.useState('recents')
     const handleChange = (e, newValue) => {
         setValue(newValue);

@@ -31,7 +31,6 @@ export default function App() {
           <br></br>
           Make your own damn website
         </Typography>
-        <SideDrawer />
       </div>
       <Editor resolver={{ Card, Button, Text, CardTop, CardBottom }}>
         <Topbar />
@@ -65,7 +64,7 @@ export default function App() {
           </Grid>
           <Grid item xs={3}>
             <Paper>
-              
+              <SideDrawer /> 
               <SettingsPanel />
             </Paper>
           </Grid>
