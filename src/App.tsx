@@ -1,76 +1,40 @@
-import {
-  uicSchoolPageBody, uicSchoolPageTitle,
-  legalDocketBody, legalDocketTitle, keyvBody, keyvTitle,
-  androidNoteBody, androidNoteTitle
-} from './text';
-import React, { useState, useCallback } from 'react';
-import {Typography, Paper, Grid, IconButton as MaterialButton} from '@material-ui/core';
-import { Toolbox } from './components/Toolbox';
-import { SettingsPanel } from './components/Settings';
-import { Container } from './components/user/Container';
-import { Button } from './components/user/Button';
-import { Card, CardTop, CardBottom } from './components/user/Card';
-import { Text } from './components/user/Text';
-import {Editor, Frame, Canvas} from "@craftjs/core";
-import { Topbar } from './components/Topbar';
-import { SideDrawer } from './components/Drawer';
-
+import React, {  } from 'react';
+import { Header  } from './components/HomePage/Header'
+import { Project } from './components/projects';
+import { legalDocketTitle, legalDocketBody, keyvTitle, uicSchoolPageBody, androidNoteBody, uicSchoolPageTitle, keyvBody, androidNoteTitle } from './text';
+import { ResumeCardContainer } from './components/HomePage/ResumeCardContainer';
+import { Box } from 'grommet';
+import { Avatar } from './components/HomePage/Avatar';
 export default function App() {
-
-  const [isVisible, setVisible] = useState(false)
-
-  const handleMenuClick = useCallback(() => {
-    setVisible(!isVisible);
-  }, [isVisible])
-
   return (
     <div>
-      <div style={{display: 'inline'}}>
-        <Typography variant="h5" align="center">
-          Paul Morgan III: Web Developer
-          <br></br>
-          Make your own damn website
-        </Typography>
-      </div>
-      <Editor resolver={{ Card, Button, Text, CardTop, CardBottom }}>
-        <Topbar />
-        <Grid container spacing={3}>
-          
-          <Grid item xs>
-            <Frame>
-              <Canvas is={Container} padding={5} background="#eee">
-                <Card />
-                <Button size="small" variant="outlined" text="CLick">
-                  
-                </Button>
-                <Canvas is={Container} padding={6} background="#eb9cd3">
-                  <Text fontSize="36" text={keyvTitle}/>
-                  <Text fontSize="small" text={keyvBody}/>
-                </Canvas>
-                <Canvas is={Container} padding={6} background="#ffb393">
-                  <Text fontSize="36" text={legalDocketTitle} />
-                  <Text fontSize="small" text={legalDocketBody} />
-                </Canvas>
-                <Canvas is={Container} padding={6} background="#ffd374">
-                  <Text fontSize="36" text={uicSchoolPageTitle}/>
-                  <Text fontSize="small" text={uicSchoolPageBody}/>
-                </Canvas>
-                <Canvas is={Container} padding={6} background="#b19cd9">
-                  <Text fontSize="36" text={androidNoteTitle}/>
-                  <Text fontSize="small" text={androidNoteBody}/>
-                </Canvas>
-              </Canvas>
-            </Frame>
-          </Grid>
-          <Grid item xs={"auto"}>
-            <SideDrawer /> 
-            <Paper>
-              
-              <SettingsPanel />
-            </Paper>
-          </Grid>
-        </Grid>
-      </Editor>
+        <div className="container">
+          <div className="navbar-brand">
+            <a className="navbar-item" href='/'>
+              <img src="MyLogo.png" alt="Paul Morgan III | Web Dev" height="48"/>
+            </a>
+          </div>
+        </div>
+        <div className="container">
+          <div className="columns is-centered">
+            <div className="column">
+              <h1 className="title">
+                Developer, student, and hobbyist
+              </h1>
+              <h2 className="subheader">I program solutions to problems, and I love what I do.</h2>
+              <div className="avatar"><Avatar/></div>
+            </div>
+          </div> 
+        </div>
+      <ResumeCardContainer boxes={[
+        <Project title={legalDocketTitle} body={legalDocketBody} status={"Offline. Can show source code on request"}/>,
+        <Project title={keyvTitle} body={keyvBody} status={"Over 200 downloads on npm!"}/>,
+        <Project title={uicSchoolPageTitle} body={uicSchoolPageBody} status={"Offline. Can show source code on request"}/>,
+        <Project title={androidNoteTitle} body={androidNoteBody} status={"App code is available on my github"}/>
+      ]}>
+      
+      </ResumeCardContainer> 
+      
     </div>
   );
 }

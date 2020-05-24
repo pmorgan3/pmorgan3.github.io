@@ -11,11 +11,10 @@ import { Button } from "./user/Button";
 import { Text } from "./user/Text"
 import { Container } from './user/Container';
 import { Card } from './user/Card';
-import { BottomBar } from "./user/BottomNavigation";
 import { Header } from "./user/Header/Header";
 
-export const Toolbox = ({isVisible}) => {
-  const { connectors, query } = useEditor();
+export const Toolbox = () => {
+  const { connectors } = useEditor();
   return (
     <Box px={2} py={2}>
       <Grid
@@ -72,7 +71,7 @@ export const Toolbox = ({isVisible}) => {
         </Grid>
         <Grid container direction="column" item>
           <MaterialButton
-            ref={ref => connectors.create(ref, <Header headerType={2} text="Header" />)} variant="outlined">
+            ref={ref => connectors.create(ref, <Header headerType={2} text="Header" />)} size="small"  variant="outlined">
               &lt;h2&#x2F;&gt;
             </MaterialButton>
         </Grid>
@@ -96,7 +95,7 @@ export const Toolbox = ({isVisible}) => {
         </Grid>
         <Grid container direction="column" item>
           <MaterialButton
-            ref={ref => connectors.create(ref, <Header headerType={6} text="Header" />)} variant="outlined">
+            ref={ref => connectors.create(ref, <Header headerType={6} text="Header" />)}  variant="outlined">
               &lt;h6&#x2F;&gt;
             </MaterialButton>
         </Grid>
