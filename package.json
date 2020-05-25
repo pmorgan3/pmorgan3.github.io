@@ -16,7 +16,7 @@
     "autoresponsive-react": "^1.1.31",
     "grommet": "^2.13.0",
     "grommet-icons": "^4.4.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.13",
     "material-ui": "^0.20.2",
     "material-ui-color-picker": "^3.2.0",
     "react": "^16.12.0",
