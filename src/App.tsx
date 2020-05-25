@@ -8,13 +8,11 @@ import { Avatar } from './components/HomePage/Avatar';
 export default function App() {
   return (
     <div>
-        <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item" href='/'>
               <img src="MyLogo.png" alt="Paul Morgan III | Web Dev" height="48"/>
             </a>
           </div>
-        </div>
         <div className="container">
           <div className="columns is-centered">
             <div className="column">
@@ -25,7 +23,6 @@ export default function App() {
               <div className="avatar"><Avatar/></div>
             </div>
           </div> 
-        </div>
       <ResumeCardContainer boxes={[
         <Project title={legalDocketTitle} body={legalDocketBody} status={"Offline. Can show source code on request"}/>,
         <Project title={keyvTitle} body={keyvBody} status={"Over 200 downloads on npm!"}/>,
@@ -35,6 +32,7 @@ export default function App() {
       
       </ResumeCardContainer> 
       
+        </div>
     </div>
   );
 }

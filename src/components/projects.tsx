@@ -5,14 +5,14 @@ export const Project: React.FunctionComponent<{title: string, body: string, stat
 
   return (
     <>
-      <Text size="large">
+      <Text size="large" className="box-title">
         {title} 
       </Text>
-      <Text size="medium">
+      <Text size="medium" className="box-body">
         {body} 
       </Text>
-      <Text size="small">
-        {status} 
+      <Text size="small" className="box-footer">
+        Project status: {status} 
       </Text>
     </>
   );
