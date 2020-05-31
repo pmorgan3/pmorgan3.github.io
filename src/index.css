@@ -42,6 +42,7 @@ code {
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: row;
   position: relative;
+  text-align: center;
 }
 .is-centered {
   -webkit-box-pack: center;
