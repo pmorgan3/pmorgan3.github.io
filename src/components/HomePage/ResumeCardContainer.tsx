@@ -5,7 +5,7 @@ import { Row, Col, Container } from 'react-bootstrap'
 
 export const ResumeCardContainer: React.FunctionComponent<{boxes: any[]}> = ({boxes}) => {
     const boxSizing: number = 100 / boxes.length
-    const colorList = ['#845ec2', '#d65db1','#ff9671', '#ffc75f', '#f9f871' ]
+    const colorList = ['#6FDAFF', '#73FAC9','#fcb1c1', '#a4abbd', '#fcfcd4' ]
     const dynamicPopulation = (list: any[]) => {
         let retList: any[] = []
         let shuffled_colors =  _.shuffle(colorList)

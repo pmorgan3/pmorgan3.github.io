@@ -7,6 +7,7 @@ import { Container } from 'react-bootstrap'
 import { Box } from 'grommet';
 import { Avatar } from './components/HomePage/Avatar';
 import { Section } from './components/HomePage/Section';
+import {TransitionImage} from './components/TransitionImage';
 export default function App() {
   return (
     <div>
@@ -27,7 +28,10 @@ export default function App() {
               </div> 
             </div> 
           </div>
-          <Section>
+            <Section>
+              <div>
+                <TransitionImage/>
+              </div>
             <div className="SectionHeader-Blue">
               Some projects I've worked on.
             </div>

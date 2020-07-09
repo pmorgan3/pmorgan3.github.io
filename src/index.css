@@ -60,7 +60,7 @@ code {
   margin: 2rem;
 }
 .Section {
-  background-color: #0081cf;
+  background-color: #AAC6FC;
   height: 150%;
   align-content: center;
   display: grid;
@@ -70,7 +70,7 @@ code {
   text-align: center;
   font-size: x-large;
   padding: 2em;
-  color: #fbeaff;
+  color: #000;
 }
 .SectionWrapper {
   margin: 5%;
