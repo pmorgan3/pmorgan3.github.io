@@ -26,6 +26,9 @@ export default function App() {
               <div className="avatar">
                 <Avatar/>
               </div> 
+                {/** this is how the pros do spacing */}
+                <br/>
+                <br/>
             </div> 
           </div>
             <Section>
