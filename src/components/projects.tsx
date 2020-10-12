@@ -8,9 +8,11 @@ export const Project: React.FunctionComponent<{title: string, body: string, stat
       <Text size="large" className="box-title">
         {title} 
       </Text>
+      <br/>
       <Text size="medium" className="box-body">
         {body} 
       </Text>
+      <br/>
       <Text size="small" className="box-footer">
         Project status: {status} 
       </Text>
