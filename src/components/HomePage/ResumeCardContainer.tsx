@@ -31,38 +31,32 @@ export const ResumeCardContainer: React.FunctionComponent<{boxes: any[]}> = ({bo
         <div className="grid">
             <Row xs={1} md={2} lg={2}>
                 <Col>
-                    <Box 
-                         pad="large" 
-                         round="large" 
-                         background={shuffled_colors[0]}>
-                    {boxes[0]}
-                    </Box>
+                    <div className="box-container"
+                      style={{background: shuffled_colors[0], opacity: 0.8}}
+                    >{boxes[0]}
+                    </div>
                 </Col>
                  <Col>
-                    <Box  
-                         pad="large" 
-                         round="large" 
-                         background={shuffled_colors[1]}>
+                    <div  className="box-container"
+                         style={{background: shuffled_colors[1], opacity: 0.8}}>
                     {boxes[1]}
-                    </Box>
+                    </div>
                 </Col>
             </Row>
              <Row xs={1} md={2} lg={2}>
                 <Col>
-                    <Box 
-                         pad="large" 
-                         round="large" 
-                         background={shuffled_colors[2]}>
+                    <div className="box-container"
+                         style={{background: shuffled_colors[2], opacity: 0.8}}
+                         >
                     {boxes[2]}
-                    </Box>
+                    </div>
                 </Col>
                  <Col>
-                    <Box  
-                         pad="large" 
-                         round="large" 
-                         background={shuffled_colors[3]}>
+                    <div   className="box-container"
+                         style={{background: shuffled_colors[3], opacity: 0.8}}
+                         >
                     {boxes[3]}
-                    </Box>
+                    </div>
                 </Col>
             </Row>
         </div>

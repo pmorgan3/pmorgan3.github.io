@@ -6,3 +6,4 @@ import {
     Instagram,
     Twitter
 } from "grommet-icons";
+import Footer from 'grommet'

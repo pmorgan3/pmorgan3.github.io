@@ -1,0 +1,9 @@
+import React from 'react'
+
+export const FooterFooter: React.FC<{}> = () => {
+  return (<>
+      <div>
+        this website was made with <3 by me.
+      </div>
+    </>)
+}
