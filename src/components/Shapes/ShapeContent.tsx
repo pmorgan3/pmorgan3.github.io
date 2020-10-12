@@ -28,7 +28,7 @@ export const Content = ()=>  {
     ...random(i),
     config: { mass: 20, tension: 200, friction: 50 }
   }))
-  useEffect(()=> void setInterval(() => sets((i: number) => ({ ...random(i), delay: i * 40 } )), 3000),[sets])
+  useEffect(()=> void setInterval(() => sets((i: number) => ({ ...random(i), delay: i * 40 } )), 15000),[sets])
   return <>{data.map((d, index) => (
     <a.mesh key={index} {...springs[index]}  castShadow receiveShadow>
       <planeBufferGeometry attach="geometry" args={d.args as [number?,number?,number?,number?]} />
