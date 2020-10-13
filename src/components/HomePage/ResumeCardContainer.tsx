@@ -8,11 +8,11 @@ const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWid
 const trans = (x,y,s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 const t = (params: number[]) => trans(params[0],params[1],params[2])
 export const ResumeCardContainer: React.FunctionComponent<{boxes: any[]}> = ({boxes}) => {
-    const boxSizing: number = 100 / boxes.length
-    //const colorList = ['#6FDAFF', '#73FAC9','#fcb1c1', '#a4abbd', '#fcfcd4' ]
 
     const colorList = ['#CA64F9', '#417DFF', '#007669', '#FF7093', '#FFCE58', '#7DFBE2']
 
+    // Not in use right now. this is part of an attempt to get card 
+    // animations functioning
     const [props, sets] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
     let shuffled_colors =  _.shuffle(colorList)
     let gridAreas = [

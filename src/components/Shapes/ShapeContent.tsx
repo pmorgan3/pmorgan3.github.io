@@ -7,7 +7,14 @@ import { useSprings, a } from 'react-spring/three'
 const num = 35
 //const colors = ['#4D183D', '#840038', '#BD0035', '#FA4637', '#FDB834']
 //const colors = ['#7F87B2', '#83B2D0', '#95DAB6', '#F2E6B1', '#DC8580'] 
+
+
+// BRIGHT color pallette
 const colors = ['#CA64F9', '#417DFF', '#007669', '#FF7093', '#FFCE58', '#7DFBE2', '#00DEEC']
+
+/** 
+ *  Sets a random position, color, and rotation based off the 'seed' i
+ */
 const random = (i: number) => {
   const r = Math.random()
   return{
@@ -29,6 +36,9 @@ export const Content = ()=>  {
     ...random(i),
     config: { mass: 20, tension: 200, friction: 50 }
   }))
+
+  // This sets the amount of time between transitions.
+  // Currently, it's at 15 seconds.
   useEffect(()=> void setInterval(() => sets((i: number) => ({ ...random(i), delay: i * 40 } )), 15000),[sets])
   return <>{data.map((d, index) => ( <a.mesh key={index} {...springs[index]}  castShadow receiveShadow>
       <planeBufferGeometry attach="geometry" args={d.args as [number?,number?,number?,number?]} />
