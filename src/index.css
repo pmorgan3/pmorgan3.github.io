@@ -59,6 +59,17 @@ code {
   bottom: 0;
   text-align: center;
 }
+.glance {
+  background: rgba(0,0,0,0.25);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  z-index: 1;
+  transform: translateY(50%);
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

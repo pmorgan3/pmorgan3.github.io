@@ -1,21 +1,24 @@
 import React from "react";
-import {Text} from 'grommet'
+import { Text } from 'grommet'
 
-export const Project: React.FunctionComponent<{title: string, body: string, status: string}> = ({title, body, status}) => {
+import { useSpring, animated } from 'react-spring'
+export const Project: React.FunctionComponent<{ title: string, body: string, status: string }> = ({ title, body, status }) => {
 
   return (
-    <>
-      <Text size="large" className="box-title">
-        {title} 
-      </Text>
-      <br/>
-      <Text size="medium" className="box-body">
-        {body} 
-      </Text>
-      <br/>
-      <Text size="small" className="box-footer">
-        Project status: {status} 
-      </Text>
-    </>
+    <div
+    >
+        <Text size="large" className="box-title">
+          {title}
+        </Text>
+        <br />
+        <Text size="medium" className="box-body">
+          {body}
+        </Text>
+        <br />
+        <Text size="small" className="box-footer">
+          Project status: {status}
+        </Text>
+
+    </div>
   );
 }
