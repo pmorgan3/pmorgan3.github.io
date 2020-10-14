@@ -16,6 +16,13 @@ code {
   background: transparent\9;
   /*background: rgba(255,255,255,0.9);*/
 }
+.art-container {
+  content: '';
+  box-shadow: inset 0 0 2000px rgba(255,255,255,.5);
+  border-radius: 5px;
+  padding: 1vh;
+  margin: 1vh;
+}
 .avatar {
   margin: auto auto;
 }
@@ -34,7 +41,9 @@ code {
   flex-shrink: 1;
   padding: 0.75rem;
 }*/
-
+.box-separator {
+  
+}
 .box-title {
   overflow-wrap: break-word;
 }
@@ -48,6 +57,7 @@ code {
   padding: 2vh;
   margin: 2vh;
 }
+
 .FooterBase {
   display: flex;
   position: relative;
@@ -72,7 +82,7 @@ code {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-auto-flow: row;
   position: relative;
   text-align: center;
@@ -105,6 +115,10 @@ code {
   text-align: center;
   justify-content: center;
   align-content: center;
+}
+.menu-link {
+  text-decoration: none;
+  
 }
 .navbar-brand {
   -webkit-box-align: stretch;

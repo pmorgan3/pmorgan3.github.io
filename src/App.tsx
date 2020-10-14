@@ -9,45 +9,32 @@ import { Footer } from './components/Footer/FooterBase';
 import { LandingSection } from './components/HomePage/LandingSection'
 import { Canvas } from 'react-three-fiber';
 import { Lights, Content } from './components/Shapes/ShapeContent';
-//import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { Home } from './components/HomePage/Home';
+import { BrowserRouter , Route, Link, Switch  } from 'react-router-dom'
+import { Art } from './components/Art/ArtPage';
+import { Navbar } from './components/HomePage/Navbar';
 
 export default function App() {
   return (
     <>
-
+<BrowserRouter>
       <Section>
       <Canvas style={{ position: 'fixed', zIndex: -1,height: '100%'}} shadowMap camera={{ position: [0, 0, 100], fov: 100, near: 0.1, far: 200000 }}>
         <Lights />
         <Content />
       </Canvas>
-
+      <Navbar/>
+      
       <LandingSection />
-        <div>
-          {/*<TransitionImage/>*/}
-        </div>
-        <div className="SectionHeader-Blue">
-          Some projects I've worked on.
-        </div>
-        <ResumeCardContainer boxes={[
-          <Project title={legalDocketTitle}
-            body={legalDocketBody}
-            status={"Offline. Can show source code on request"}
-          />,
-          <Project title={keyvTitle}
-            body={keyvBody}
-            status={"Over 200 downloads on npm!"}
-          />,
-          <Project title={uicSchoolPageTitle}
-            body={uicSchoolPageBody}
-            status={"Offline. Can show source code on request"}
-          />,
-          <Project title={androidNoteTitle}
-            body={androidNoteBody}
-            status={"App code is available on my github"}
-          />
-        ]}>
-        </ResumeCardContainer>
+      
+        
+          <Route exact path='/' component={Home}/>
+          <Route path='/Art' component={Art}/>
+        
+      
+      
       </Section>
+      </BrowserRouter>
     </>
   );
 } 
