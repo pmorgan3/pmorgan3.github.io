@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import ReactDOM from 'react-dom'
 import _ from 'lodash'
 import { Row, Col, Container } from 'react-bootstrap'
@@ -7,59 +7,54 @@ import { useSpring, animated } from 'react-spring'
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
 const trans = (x,y,s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 const t = (params: number[]) => trans(params[0],params[1],params[2])
+
+type Tup = {first?: any, second?: any}
 export const ResumeCardContainer: React.FunctionComponent<{boxes: any[]}> = ({boxes}) => {
-
+    const groupByTwo = (b: any[]): Tup[] => {
+        let retArray: Tup[] = [];
+        for(let i = 0; i < b.length-1; i+=2){
+            retArray.push({first: b[i], second: b[i+1]})
+        }
+        return retArray;
+    }
     const colorList = ['#CA64F9', '#417DFF', '#007669', '#FF7093', '#FFCE58', '#7DFBE2']
-
-    // Not in use right now. this is part of an attempt to get card 
-    // animations functioning
-    const [props, sets] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
+    
     let shuffled_colors =  _.shuffle(colorList)
-    let gridAreas = [
-                {name: 'gridTop', start: [0,0], end: [0,0]},
-                {name: 'gridRight', start: [1,0], end: [1,0]},
-                {name: 'gridLeft', start: [1,1], end: [1,1]},
-                {name: 'gridBottom', start: [0,1], end: [0,1]}
-            ]
 
+    const uniqueRandomColor = () => {
+        const c = Math.floor(Math.random()*shuffled_colors.length)
+        let temp_list = shuffled_colors;
+        const retCol = shuffled_colors[c];
+        shuffled_colors = temp_list.filter((v) => v === shuffled_colors[c] )
+
+        return retCol;
+    }
+
+    const list = groupByTwo(boxes)
     return (<>
         <div className="grid">
-            <Row xs={1} md={2} lg={2}>
-                <Col>
-                    <animated.div 
-                    onMouseMove={({clientX: x, clientY: y}) => sets({xys: calc(x,y)})}
-                    onMouseLeave={() => sets({xys: [0,0,1]})}
+            {list.map(v => {
+                shuffled_colors = _.shuffle(shuffled_colors)
+                return <Row xs={1} md={2} lg={2}>
+                    <Col>
+                    <div 
                     className="box-container"
-                      style={{background: shuffled_colors[0], opacity: 0.8, transform: props.xys.interpolate(t)}}
+                      style={{background: shuffled_colors[0], opacity: 0.8}}
                     >
-                        <animated.span>
-                            {boxes[0]}
-                        </animated.span>
-                    </animated.div>
-                </Col>
-                 <Col>
-                    <div  className="box-container"
-                         style={{background: shuffled_colors[1], opacity: 0.8}}>
-                    {boxes[1]}
+                        {v.first}
                     </div>
-                </Col>
-            </Row>
-             <Row xs={1} md={2} lg={2}>
-                <Col>
-                    <div className="box-container"
-                         style={{background: shuffled_colors[2], opacity: 0.8}}
-                         >
-                    {boxes[2]}
+                    </Col>
+                    <Col>
+                    <div 
+                    className="box-container"
+                      style={{background: shuffled_colors[1], opacity: 0.8}}
+                    >
+                        {v.second}
                     </div>
-                </Col>
-                 <Col>
-                    <div   className="box-container"
-                         style={{background: shuffled_colors[3], opacity: 0.8}}
-                         >
-                    {boxes[3]}
-                    </div>
-                </Col>
-            </Row>
+                    </Col>
+                </Row>
+            })}
+            
         </div>
         </>
      )
