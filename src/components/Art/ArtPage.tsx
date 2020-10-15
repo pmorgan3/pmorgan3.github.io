@@ -1,7 +1,17 @@
 import React from "react";
+
 import { Row, Col, Container } from "react-bootstrap";
 export const Art: React.FC = () => {
+  let winWidth = window.innerWidth;
+  
+  
+  const setWidth = () => {
+    if(winWidth <= 768)
+      return "350"
+    return "400"
+  }
   return (
+
     <>
     <div className='SectionHeader-Blue'>Some art I made. I draw inspiration from surrealism artists.</div>
     <div className="grid">
@@ -11,7 +21,7 @@ export const Art: React.FC = () => {
             <iframe
               title="stacks"
               src='https://editor.p5js.org/pmorgan3/embed/9pA5ic5xH'
-              width='400'
+              width={setWidth()}
               height='400'
             ></iframe>
           </div>
@@ -25,7 +35,7 @@ export const Art: React.FC = () => {
         <iframe
           title="Tuesday"
           src="https://editor.p5js.org/pmorgan3/embed/pJFhSp6Ln"
-          width="400"
+          width={setWidth()}
           height="400"
         ></iframe>
         </div>
@@ -37,7 +47,7 @@ export const Art: React.FC = () => {
           <iframe
           title="colorStack"
           src="https://editor.p5js.org/pmorgan3/embed/ebxVBoS1r"
-          width="400"
+          width={setWidth()}
           height="400"
         ></iframe>
           </div>
@@ -50,7 +60,7 @@ export const Art: React.FC = () => {
         <div className='art-container'>
         <iframe src="https://editor.p5js.org/pmorgan3/embed/V1Ynqr1G-"
         title="morecolor"
-        width="400"
+        width={setWidth()}
         height="400"></iframe>
         </div>
         </Col>
@@ -60,7 +70,7 @@ export const Art: React.FC = () => {
           <div className='art-container'>
           <iframe src="https://editor.p5js.org/pmorgan3/embed/EUS0zyYMF"
             title="white"
-            width="400"
+            width={setWidth()}
             height="400"
           ></iframe>
           </div>
