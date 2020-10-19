@@ -16,8 +16,7 @@ export const FetchRepos = async () =>{
             
         }).catch(err => {
             console.error(`AHHHHHH: ${err}`)
-            console.log(`when you caught this error your token was: ${process.env.REACT_APP_GITHUB_TOKEN}`)
-            console.log(`current variables: ${JSON.stringify(process.env)}`)
+            
             return [] as GithubRepo[]
             })
         .catch(err =>{ throw err});
