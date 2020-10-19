@@ -13,7 +13,7 @@ export const Art: React.FC = () => {
   return (
 
     <>
-    <div className='SectionHeader-Blue'>Some art I made. I draw inspiration from surrealism artists.</div>
+    <div className='SectionHeader-Blue'>Some art I made. I draw inspiration from surrealism artists. I am enjoy creative coding because it allows me to express ideas I would otherwise be unable to convey.</div>
     <div className="grid">
       <Row xs={1} md={2} lg={2}>
         <Col>
