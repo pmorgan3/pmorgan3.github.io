@@ -1,6 +1,6 @@
 import Axios from "axios"
 import { GithubRepo } from "./types";
-require('dotenv').config()
+
 
 export const FetchRepos = async () =>{
     
