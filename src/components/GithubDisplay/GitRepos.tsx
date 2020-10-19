@@ -7,7 +7,7 @@ import { FetchRepos } from './Utilities'
 
 export const RepoListItem: React.FC<{ repo: GithubRepo}> = ({repo}) => {
     return <>
-        <Project url={repo.url} title={repo.full_name.slice(9)} body={repo.description} status={`Stars: ${repo.stargazers_count}`} />
+        <Project url={repo.html_url} title={repo.full_name.slice(9)} body={repo.description} status={`Stars: ${repo.stargazers_count}`} />
     </>
 }
 
