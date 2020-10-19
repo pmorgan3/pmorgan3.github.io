@@ -88,6 +88,13 @@ code {
   position: relative;
   text-align: center;
 }
+.grid-art {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-flow: row;
+  position: relative;
+  text-align: center;
+}
 .HeaderContainer {
   background: inherit;
   position: relative;
@@ -159,10 +166,17 @@ code {
 @media only screen and (max-width: 1000px){
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  .grid-art {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (max-width: 600px) {
   .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-art {
     grid-template-columns: 1fr;
   }
 }
