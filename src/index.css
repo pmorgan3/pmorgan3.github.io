@@ -46,6 +46,7 @@ code {
 }
 .box-title {
   overflow-wrap: break-word;
+  text-decoration: none;
 }
 .box-body {
 }

@@ -2,13 +2,13 @@ import React from "react";
 import { Text } from 'grommet'
 
 import { useSpring, animated } from 'react-spring'
-export const Project: React.FunctionComponent<{ title: string, body: string, status: string }> = ({ title, body, status }) => {
+export const Project: React.FunctionComponent<{ title: string, body: string, status: string, url: string }> = ({ title, body, status, url}) => {
 
   return (
     <div
     >
         <Text size="large" className="box-title">
-          {title}
+          <a href={url} style={{textDecoration: 'none', color: 'black'}}>{title}</a>
         </Text>
         <br />
         <Text size="medium" className="box-body">
@@ -16,7 +16,7 @@ export const Project: React.FunctionComponent<{ title: string, body: string, sta
         </Text>
         <br />
         <Text size="small" className="box-footer">
-          Project status: {status}
+          {status}
         </Text>
 
     </div>

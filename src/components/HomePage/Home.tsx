@@ -9,6 +9,7 @@ import {
   androidNoteTitle,
   androidNoteBody,
 } from "../../text";
+import { GithubRepos } from "../GithubDisplay/GitRepos";
 import { Project } from "../projects";
 import { ResumeCardContainer } from "./ResumeCardContainer";
 
@@ -17,7 +18,7 @@ export const Home: React.FC = () => {
     <>
       <div>{/*<TransitionImage/>*/}</div>
       <div className='SectionHeader-Blue'>Some projects I've worked on.</div>
-      <ResumeCardContainer
+      {/*<ResumeCardContainer
         boxes={[
           <Project
             title={legalDocketTitle}
@@ -40,7 +41,8 @@ export const Home: React.FC = () => {
             status={"App code is available on my github"}
           />,
         ]}
-      ></ResumeCardContainer>
+      ></ResumeCardContainer>*/}
+      <GithubRepos/>
     </>
   );
 };
