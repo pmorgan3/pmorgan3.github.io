@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { ResumeCardContainer } from '../HomePage/ResumeCardContainer'
+import { ResumeCardContainer } from '../Layout/ResumeCardContainer'
 import { Project } from '../projects'
 import { GithubRepo } from './types'
 import { FetchRepos } from './Utilities'

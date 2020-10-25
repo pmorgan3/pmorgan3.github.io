@@ -86,7 +86,8 @@ const RightNav: React.FC<{open: boolean}> = ({open}) => {
         
         <Ul open={open}>
             <div><Link className="menu-link" to='/'>Home</Link></div>
-            <div><Link className="menu-link" to='/Art'>Art</Link></div>
+            
+            <div><Link className="menu-link" to='/Projects'>Projects</Link></div>
             
         </Ul>
         

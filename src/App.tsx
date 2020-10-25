@@ -1,18 +1,11 @@
 import React, { } from 'react';
-import { Project } from './components/projects';
-import { legalDocketTitle, legalDocketBody, keyvTitle, uicSchoolPageBody, androidNoteBody, uicSchoolPageTitle, keyvBody, androidNoteTitle } from './text';
-import { ResumeCardContainer } from './components/HomePage/ResumeCardContainer';
-import { Avatar } from './components/HomePage/Avatar';
-import { Section } from './components/HomePage/Section';
-import { TransitionImage } from './components/TransitionImage';
-import { Footer } from './components/Footer/FooterBase';
-import { LandingSection } from './components/HomePage/LandingSection'
+import { Section } from './components/Layout/Section';
+import { LandingSection } from './components/Layout/LandingSection'
 import { Canvas } from 'react-three-fiber';
 import { Lights, Content } from './components/Shapes/ShapeContent';
-import { Home } from './components/HomePage/Home';
-import { BrowserRouter , Route, Link, Switch  } from 'react-router-dom'
-import { Art } from './components/Art/ArtPage';
-import { Navbar } from './components/HomePage/Navbar';
+import {  ProjectsPage, Art }  from './components/Pages'
+import { BrowserRouter , Route  } from 'react-router-dom'
+import { Navbar } from './components/Layout/Navbar';
 
 export default function App() {
   return (
@@ -26,13 +19,8 @@ export default function App() {
       <Navbar/>
       
       <LandingSection />
-      
-        
-          <Route exact path='/' component={Home}/>
+          <Route exact path='/' component={ProjectsPage}/>
           <Route path='/Art' component={Art}/>
-        
-      
-      
       </Section>
       </BrowserRouter>
     </>
