@@ -1,21 +1,21 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
 /**background-image: linear-gradient(to right top, #eb9cd3, #dd9cd7, #cf9cd9, #c09cda, #b19cd9); */
+
 .columns {
   background: transparent\9;
   /*background: rgba(255,255,255,0.9);*/
 }
+
 .art-container {
   content: '';
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
@@ -23,9 +23,11 @@ code {
   padding: 1vh;
   margin: 1vh;
 }
+
 .avatar {
   margin: auto auto;
 }
+
 .avatar:before {
   content: '';
   position: absolute;
@@ -41,14 +43,15 @@ code {
   flex-shrink: 1;
   padding: 0.75rem;
 }*/
-.box-separator {
-}
+
+.box-separator {}
+
 .box-title {
   overflow-wrap: break-word;
   text-decoration: none;
 }
-.box-body {
-}
+
+.box-body {}
 
 .box-container {
   content: '';
@@ -58,6 +61,17 @@ code {
   margin: 2vh;
 }
 
+.card {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .FooterBase {
   display: flex;
   position: relative;
@@ -65,10 +79,12 @@ code {
   /*background: grey;*/
   height: 100px;
 }
+
 .FooterFooter {
   bottom: 0;
   text-align: center;
 }
+
 .glance {
   background: rgba(0, 0, 0, 0.25);
   width: 100%;
@@ -80,6 +96,7 @@ code {
   z-index: 1;
   transform: translateY(50%);
 }
+
 .grid {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -87,6 +104,7 @@ code {
   position: relative;
   text-align: center;
 }
+
 .grid-art {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -94,6 +112,7 @@ code {
   position: relative;
   text-align: center;
 }
+
 .HeaderContainer {
   background: inherit;
   position: relative;
@@ -103,6 +122,7 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
+
 .HeaderContainer::before {
   content: '';
   position: absolute;
@@ -115,6 +135,7 @@ code {
   filter: blur();
   background: inherit;
 }
+
 .is-centered {
   -webkit-box-pack: center;
   display: block;
@@ -122,9 +143,11 @@ code {
   justify-content: center;
   align-content: center;
 }
+
 .menu-link {
   text-decoration: none;
 }
+
 .navbar-brand {
   -webkit-box-align: stretch;
   align-items: stretch;
@@ -133,32 +156,36 @@ code {
   min-width: 3.25rem;
   margin: 2rem;
 }
+
 .Section {
   /*background-color: #aac6fc;*/
   align-content: center;
   display: grid;
   overflow: hidden;
 }
+
 .SectionHeader-Blue {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   font-size: x-large;
   padding-bottom: 2em;
   padding-top: 2em;
   /*color: #000;*/
 }
-.SectionWrapper {
-}
+
+.SectionWrapper {}
+
 .subheader {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 300;
   line-height: 1.5;
 }
+
 .title {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: xx-large;
 }
+
 @media only screen and (max-width: 1000px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
@@ -167,6 +194,7 @@ code {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
@@ -175,9 +203,8 @@ code {
     grid-template-columns: 1fr;
   }
 }
-html,
-body,
-#root {
+
+html, body, #root {
   margin: 0;
   padding: 0;
   /*background-color: white;*/

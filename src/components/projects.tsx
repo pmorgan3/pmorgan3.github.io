@@ -1,7 +1,6 @@
 import React from 'react'
 import { Text } from 'grommet'
 
-import { useSpring, animated } from 'react-spring'
 export const Project: React.FunctionComponent<{
   title: string
   body: string

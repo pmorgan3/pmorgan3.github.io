@@ -1,12 +1,10 @@
 import React from 'react'
 import { Section } from './components/Layout/Section'
-import { LandingSection } from './components/Layout/LandingSection'
+import { LandingSection, Navbar } from './components/Layout'
 import { Canvas } from 'react-three-fiber'
 import { Lights, Content } from './components/Shapes/ShapeContent'
 import { Art, ContactPage, ProjectsPage } from './components/Pages'
 import { BrowserRouter, Route } from 'react-router-dom'
-import { Navbar } from './components/Layout/Navbar'
-import {} from './components/Pages/ContactPage'
 
 export default function App() {
   return (

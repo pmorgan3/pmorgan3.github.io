@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { BrowserRouter, NavLink, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export const Nav = styled.nav`
   width: 100%;
   height: 55px;

@@ -2,9 +2,6 @@ import React from 'react'
 import _ from 'lodash'
 import { Row, Col } from 'react-bootstrap'
 
-const trans = (x, y, s) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-
 type Tup = { first?: any; second?: any }
 export const ResumeCardContainer: React.FunctionComponent<{ boxes: any[] }> = ({
   boxes,
