@@ -143,18 +143,19 @@ export default function useWindowDimensions() {
   return windowDimensions
 }
 export const Navbar: React.FC<{ onClick: () => void }> = ({ onClick }) => {
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
   const placement = useWindowDimensions().width <= 1000 ? 'right' : 'bottom'
-  const timer = setTimeout(() => {
-    setShow(!show)
-  }, 3000)
+  const timer = useEffect(() => {
+    const t = setTimeout(() => {
+      setShow(!show)
+    }, 3000)
+    return () => clearTimeout(t)
+  }, [])
   return (
     <>
       <Nav>
         <Tooltip
           TransitionComponent={Zoom}
-          open={show}
-          onOpen={() => timer}
           title='Click here to turn off animations!'
           arrow
           placement={placement}
