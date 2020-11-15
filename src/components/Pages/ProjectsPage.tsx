@@ -5,7 +5,7 @@ export const ProjectsPage: React.FC = () => {
   return (
     <>
       <div>{/*<TransitionImage/>*/}</div>
-      <div className='SectionHeader-Blue'>Some projects I've worked on.</div>
+      <div className='SectionHeader-Blue'>Some of my projects on github.</div>
       <GithubRepos />
     </>
   )

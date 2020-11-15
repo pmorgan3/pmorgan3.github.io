@@ -121,6 +121,8 @@ code {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  padding-left: .5%;
+  padding-right: .5%;
 }
 
 .HeaderContainer::before {
@@ -157,6 +159,60 @@ code {
   margin: 2rem;
 }
 
+.ResumeContainer {
+  background: inherit;
+  position: relative;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: fit-content;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  float: left;
+  margin-right: 5%;
+  padding-bottom: .5%;
+  padding-left: .5%;
+  padding-right: .5%;
+}
+
+.ResumeContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-content: left;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.4);
+  filter: blur();
+  background: inherit;
+}
+
+.ResumeDate {
+  font-weight: lighter;
+  font-size: small;
+}
+
+.ResumeDescription {
+  font-size: medium;
+  font-weight: normal;
+  color: black;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.ResumeHeader {
+  font-weight: bold;
+  color: black;
+  font-size: x-large;
+}
+
+.ResumeSubHeader {
+  font-weight: bold;
+  color: black;
+  margin-top: 2%;
+  font-size: large;
+}
+
 .Section {
   /*background-color: #aac6fc;*/
   align-content: center;
@@ -174,6 +230,14 @@ code {
 }
 
 .SectionWrapper {}
+
+.Skills {
+  font-size: medium;
+  font-weight: normal;
+  color: black;
+  margin-top: 1%;
+  margin-left: 5%;
+}
 
 .subheader {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

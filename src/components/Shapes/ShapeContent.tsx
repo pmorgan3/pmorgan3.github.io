@@ -36,7 +36,7 @@ const data = new Array(num).fill(0).map(() => {
   }
 })
 export const Content = () => {
-  const [springs, sets] = useSprings(num, (i) => ({
+  const [springs, sets] = useSprings(num, (i: number) => ({
     from: random(i),
     ...random(i),
     config: { mass: 20, tension: 200, friction: 50 },

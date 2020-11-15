@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Tooltip from '@material-ui/core/Tooltip'
+import Zoom from '@material-ui/core/Zoom'
+
 export const Nav = styled.nav`
   width: 100%;
   height: 55px;
@@ -115,14 +118,51 @@ export const Burger: React.FC = () => {
     </>
   )
 }
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window
+  return {
+    width,
+    height,
+  }
+}
 
-export const Navbar: React.FC = () => {
+export default function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  )
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions())
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  return windowDimensions
+}
+export const Navbar: React.FC<{ onClick: () => void }> = ({ onClick }) => {
+  const [show, setShow] = useState(true)
+  const placement = useWindowDimensions().width <= 1000 ? 'right' : 'bottom'
+  const timer = setTimeout(() => {
+    setShow(!show)
+  }, 3000)
   return (
     <>
       <Nav>
-        <div className='logo'>
-          <img src='MyLogo.png' alt='Paul Morgan III | Web Dev' height='48' />
-        </div>
+        <Tooltip
+          TransitionComponent={Zoom}
+          open={show}
+          onOpen={() => timer}
+          title='Click here to turn off animations!'
+          arrow
+          placement={placement}
+        >
+          <div className='logo' onClick={onClick}>
+            <img src='MyLogo.png' alt='Paul Morgan III | Web Dev' height='48' />
+          </div>
+        </Tooltip>
         <Burger />
       </Nav>
     </>

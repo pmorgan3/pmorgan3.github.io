@@ -32,6 +32,7 @@ export const GithubRepos: React.FC = () => {
         <ResumeCardContainer
           boxes={repos
             .filter((r) => r.description !== '')
+            .filter((r)=> r.fork !== true)
             .sort((a, b) => b.stargazers_count - a.stargazers_count)
             .map((r) => {
               return <RepoListItem repo={r} />
