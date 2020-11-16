@@ -145,6 +145,11 @@ export default function useWindowDimensions() {
 export const Navbar: React.FC<{ onClick: () => void }> = ({ onClick }) => {
   const [show, setShow] = useState(false)
   const placement = useWindowDimensions().width <= 1000 ? 'right' : 'bottom'
+  const [onOff, setOnOff] = useState('off')
+  const wordToggle = () => {
+    if (onOff === 'off') setOnOff('on')
+    else setOnOff('off')
+  }
   const timer = useEffect(() => {
     const t = setTimeout(() => {
       setShow(!show)
@@ -156,11 +161,17 @@ export const Navbar: React.FC<{ onClick: () => void }> = ({ onClick }) => {
       <Nav>
         <Tooltip
           TransitionComponent={Zoom}
-          title='Click here to turn off animations!'
+          title={`Click here to turn ${onOff} animations!`}
           arrow
           placement={placement}
         >
-          <div className='logo' onClick={onClick}>
+          <div
+            className='logo'
+            onClick={() => {
+              wordToggle()
+              onClick()
+            }}
+          >
             <img src='MyLogo.png' alt='Paul Morgan III | Web Dev' height='48' />
           </div>
         </Tooltip>
