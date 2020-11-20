@@ -14,7 +14,8 @@
     "noEmit": true,
     "jsx": "react",
     "noImplicitAny": false,
-    "strict": true
+    "strict": true,
+    "outDir": "./docs"
   },
   "include": ["src/**/*"]
 }
