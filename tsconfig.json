@@ -15,7 +15,6 @@
     "jsx": "react",
     "noImplicitAny": false,
     "strict": true,
-    "outDir": "./docs"
   },
   "include": ["src/**/*"]
 }
