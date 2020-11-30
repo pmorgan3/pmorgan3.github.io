@@ -91,6 +91,15 @@ export const Art: React.FC = () => {
             <div className='box-separator'></div>
           </Col>
         </Row>
+
+        <div className='SectionHeader-Blue'>My Final Project</div>
+        <iframe
+          title='final'
+          src='https://editor.p5js.org/pmorgan3/embed/nGvsdG3zf'
+          width='800'
+          height='600'
+          scrolling='no'
+        ></iframe>
       </div>
     </>
   )
