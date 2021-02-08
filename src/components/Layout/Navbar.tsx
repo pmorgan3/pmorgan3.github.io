@@ -109,12 +109,12 @@ export const Burger: React.FC = () => {
 
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+    {/*<StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />
       </StyledBurger>
-      <RightNav open={open} />
+      <RightNav open={open} />*/}
     </>
   )
 }

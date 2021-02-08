@@ -28,7 +28,7 @@ export default function App() {
             </Canvas>
           </div>
 
-          <Navbar onClick={() => setShow(!show)} />
+            <Navbar onClick={() => setShow(!show)} />
 
           <LandingSection />
           <Route exact path='/' component={ResumePage} />
