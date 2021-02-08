@@ -1,10 +1,11 @@
 import React from 'react'
 import { Avatar } from './Avatar'
+import { Github, LinkedIn, Instagram } from '../Icons/Icon'
 export const LandingSection: React.FC = () => {
   return (
     <>
-      <div className='HeaderContainer'>
-        <div className='columns is-centered'>
+      <div className='columns is-centered'>
+        <div className='HeaderContainer'>
           <div className='column'>
             <h1 className='title'>Developer, student, and hobbyist</h1>
             <h2 className='subheader'>
@@ -16,6 +17,10 @@ export const LandingSection: React.FC = () => {
             <br />
           </div>
         </div>
+
+        <Github />
+        <LinkedIn />
+        <Instagram />
       </div>
     </>
   )
