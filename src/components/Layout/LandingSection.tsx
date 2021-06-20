@@ -7,7 +7,7 @@ export const LandingSection: React.FC = () => {
       <div className='columns is-centered'>
         <div className='HeaderContainer'>
           <div className='column'>
-            <h1 className='title'>Developer, student, and hobbyist</h1>
+            <h1 className='title'>Developer, geek, and hobbyist</h1>
             <h2 className='subheader'>
               I program solutions to problems, and I love what I do.
             </h2>

@@ -35,6 +35,11 @@ const Experience: React.FC = () => {
   return (
     <>
       <ResumeHeader header='Experience' />
+      <ResumeSubHeader subHeader='Webitects: Software Engineer' />
+      <ResumeDate dateRange='May 2021 - Present' />
+      <ResumeDescription description='As a Software engineer I worked directly with clients to create full stack web applications that meet their needs.'/>
+      <br />
+
       <ResumeSubHeader subHeader='Webitects: Software Developer Intern' />
       <ResumeDate dateRange='May 2019 - August 2020' />
       <ResumeDescription
