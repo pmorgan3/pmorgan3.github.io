@@ -13,7 +13,7 @@
     "bootstrap": "^4.5.0",
     "grommet": "^2.13.0",
     "grommet-icons": "^4.4.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "material-ui": "^0.20.2",
     "material-ui-color-picker": "^3.2.0",
     "react": "^16.12.0",
